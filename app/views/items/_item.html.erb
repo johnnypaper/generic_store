@@ -1,5 +1,13 @@
 <div id="<%= dom_id item %>">
   <p>
+    <div>
+    <% item.images.each do |image| %>
+      <%= image_tag image %>
+    <% end %>
+  </div>
+  </p>
+
+  <p>
     <strong>Name:</strong>
     <%= item.name %>
   </p>
